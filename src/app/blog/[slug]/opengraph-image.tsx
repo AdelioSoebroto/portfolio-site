@@ -34,7 +34,7 @@ export default async function Image(props: { params: Promise<{ slug: string }> }
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 28, color: "#2997ff" }}>{`${profile.name} — Blog`}</div>
+        <div style={{ fontSize: 28, color: "#2997ff" }}>{`${profile.name} · Blog`}</div>
         <div style={{ fontSize: 56, fontWeight: 700, letterSpacing: -1, maxWidth: 950 }}>
           {title}
         </div>

@@ -26,7 +26,7 @@ export default function Footer() {
           ))}
         </ul>
         <p className="text-[12px] text-muted">
-          Building in public — one project a month, six months, all on GitHub.
+          Building in public: one project a month, six months, all on GitHub.
         </p>
       </div>
     </footer>

@@ -27,7 +27,7 @@ export default async function ProjectDetailPage(props: PageProps<"/projects/[slu
           <span className="text-[12px] font-medium text-muted tracking-wide">
             {project.year}
           </span>
-          <span className="rounded-full bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
+          <span className="rounded-md bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
             {project.award}
           </span>
         </div>
@@ -39,7 +39,7 @@ export default async function ProjectDetailPage(props: PageProps<"/projects/[slu
           {project.tags.map((tag) => (
             <li
               key={tag}
-              className="rounded-full bg-surface px-3 py-1 text-[12px] text-muted"
+              className="rounded-md bg-surface px-3 py-1 text-[12px] text-muted"
             >
               {tag}
             </li>

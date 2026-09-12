@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                 {project.skills.map((skill) => (
                   <li
                     key={skill}
-                    className="rounded-full bg-background px-3 py-1 text-[12px] text-muted"
+                    className="rounded-md bg-background px-3 py-1 text-[12px] text-muted"
                   >
                     {skill}
                   </li>
@@ -79,8 +79,8 @@ export default function ProjectsPage() {
             Earlier projects
           </h2>
           <p className="mt-1 text-[15px] text-muted">
-            Team projects from university — award-winning healthtech builds
-            and a product concept — before this roadmap.
+            Team projects from university, including award-winning healthtech
+            builds and a product concept, before this roadmap.
           </p>
         </FadeIn>
         <ul className="mt-6 grid sm:grid-cols-2 gap-6">
@@ -106,7 +106,7 @@ export default function ProjectsPage() {
                   <span className="text-[12px] font-medium text-muted tracking-wide">
                     {project.year}
                   </span>
-                  <span className="rounded-full bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
+                  <span className="rounded-md bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
                     {project.award}
                   </span>
                 </div>
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="rounded-full bg-background px-3 py-1 text-[12px] text-muted"
+                      className="rounded-md bg-background px-3 py-1 text-[12px] text-muted"
                     >
                       {tag}
                     </li>

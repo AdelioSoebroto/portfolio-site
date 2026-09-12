@@ -113,7 +113,7 @@ export function ChatWidget() {
                       key={q}
                       type="button"
                       onClick={() => send(q)}
-                      className="text-left text-[13px] rounded-full bg-surface hover:bg-background border border-hairline px-3 py-1.5 transition-colors"
+                      className="text-left text-[13px] rounded-lg bg-surface hover:bg-background border border-hairline px-3 py-1.5 transition-colors"
                     >
                       {q}
                     </button>
@@ -134,13 +134,13 @@ export function ChatWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask a question…"
-                className="flex-1 min-w-0 rounded-full bg-surface px-3.5 py-2 text-[14px] outline-none focus:ring-2 focus:ring-accent"
+                className="flex-1 min-w-0 rounded-lg bg-surface px-3.5 py-2 text-[14px] outline-none focus:ring-2 focus:ring-accent"
               />
               <button
                 type="submit"
                 disabled={!input.trim()}
                 aria-label="Send"
-                className="rounded-full bg-accent text-white w-9 h-9 shrink-0 flex items-center justify-center disabled:opacity-40 transition-opacity"
+                className="rounded-lg bg-accent text-white w-9 h-9 shrink-0 flex items-center justify-center disabled:opacity-40 transition-opacity"
               >
                 ↑
               </button>
@@ -156,9 +156,25 @@ export function ChatWidget() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
-        className="w-14 h-14 rounded-full bg-accent text-white shadow-lg flex items-center justify-center text-[22px]"
+        className="w-14 h-14 rounded-full bg-accent text-white shadow-lg flex items-center justify-center"
       >
-        {open ? "×" : "💬"}
+        {open ? (
+          <span className="text-[22px] leading-none">×</span>
+        ) : (
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden
+          >
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+        )}
       </motion.button>
     </div>
   );

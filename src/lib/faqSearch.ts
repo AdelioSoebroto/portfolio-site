@@ -1,7 +1,7 @@
 import { knowledgeBase } from "@/content/botKnowledge";
 
 const FALLBACK =
-  "I don't have a canned answer for that yet — try asking about my current job, the 6-month roadmap, past projects, skills, or education. You can also check the Projects or About pages directly.";
+  "I don't have a canned answer for that yet. Try asking about my current job, the 6-month roadmap, past projects, skills, or education. You can also check the Projects or About pages directly.";
 
 function escapeRegExp(text: string): string {
   return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

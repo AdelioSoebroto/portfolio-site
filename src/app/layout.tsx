@@ -13,7 +13,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${profile.name} — Building in Public`,
+  title: `${profile.name} · Building in Public`,
   description:
     "A 6-month, one-project-a-month journey from web fundamentals to full-stack and AI-integrated systems.",
 };

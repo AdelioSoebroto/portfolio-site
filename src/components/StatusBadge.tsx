@@ -9,7 +9,7 @@ const styles: Record<ProjectStatus, string> = {
 export default function StatusBadge({ status }: { status: ProjectStatus }) {
   return (
     <span
-      className={`shrink-0 rounded-full px-3 py-1 text-[11px] font-medium tracking-wide ${styles[status]}`}
+      className={`shrink-0 rounded-md px-3 py-1 text-[11px] font-medium tracking-wide ${styles[status]}`}
     >
       {status}
     </span>

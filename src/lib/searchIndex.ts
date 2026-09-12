@@ -23,7 +23,7 @@ export function buildSearchIndex(): SearchItem[] {
   const roadmap: SearchItem[] = projects.map((p) => ({
     id: `roadmap-${p.slug}`,
     title: p.title,
-    subtitle: `Month ${p.month} — ${p.status}`,
+    subtitle: `Month ${p.month} · ${p.status}`,
     href: "/projects",
     group: "Roadmap",
   }));

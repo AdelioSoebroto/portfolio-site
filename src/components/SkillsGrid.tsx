@@ -14,7 +14,7 @@ export function SkillsGrid() {
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full bg-background px-3 py-1 text-[13px]"
+                  className="rounded-md bg-background px-3 py-1 text-[13px]"
                 >
                   {skill}
                 </li>

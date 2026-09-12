@@ -23,8 +23,8 @@ export type Achievement = {
 };
 
 export const achievements: Achievement[] = [
-  { label: "APICTA Hong Kong 2023 — Merit Award for MyoScope Alert, an ML-powered digital stethoscope for heart attack detection" },
-  { label: "APICTA Pakistan 2022 — Merit Award for AMons, an ECG-based real-time arrhythmia monitoring system" },
+  { label: "APICTA Hong Kong 2023: Merit Award for MyoScope Alert, an ML-powered digital stethoscope for heart attack detection" },
+  { label: "APICTA Pakistan 2022: Merit Award for AMons, an ECG-based real-time arrhythmia monitoring system" },
   { label: "2nd Winner, ERP Research and Project Mini Contest (2023)" },
   { label: "Top 10, JBC Business Plan Competition (2022)" },
   { label: "SAP Certified: SAP01 Fundamentals (2022), SAP010 Business Processes in Financial Accounting (2023), SAP500 Supply Chain Management (2023)" },

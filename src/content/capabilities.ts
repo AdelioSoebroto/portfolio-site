@@ -2,7 +2,7 @@ export const capabilities = [
   {
     title: "Full-cycle ownership",
     description:
-      "Own PStudio, MyAds, Bulk Premium, Malena, and LBA end-to-end — grooming, sprint planning, development, testing, release, and monitoring.",
+      "Own PStudio, MyAds, Bulk Premium, Malena, and LBA end-to-end: grooming, sprint planning, development, testing, release, and monitoring.",
   },
   {
     title: "Hands-on development",
@@ -17,6 +17,6 @@ export const capabilities = [
   {
     title: "Cross-team coordination",
     description:
-      "Bridge engineers, other TEC associates, and external vendors — directly in Telkomsel's live pre-production and production environments.",
+      "Bridge engineers, other TEC associates, and external vendors, directly in Telkomsel's live pre-production and production environments.",
   },
 ];

@@ -18,12 +18,12 @@ export default function AboutPage() {
         </FadeIn>
       </div>
 
-      <ScrollRevealText text="One year out of school, I already own enterprise systems end-to-end at Telkomsel. I'm not doing this roadmap because I'm behind — I'm doing it so I never stand still." />
+      <ScrollRevealText text="One year out of school, I already own enterprise systems end-to-end at Telkomsel. I'm not doing this roadmap because I'm behind. I'm doing it so I never stand still." />
 
       <StickySection index="01" label="Background">
         <p className="text-[17px] leading-relaxed">
           A year out of Telkom University, I&apos;m a TEC (Telkomsel Early
-          Career) Associate on the IT Digital Advertisement Management team —
+          Career) Associate on the IT Digital Advertisement Management team,
           one of four people acting as the <strong>IT Tower</strong> for five
           enterprise ad-tech systems. Here&apos;s what that actually means:
         </p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
         </div>
 
         <p className="mt-6 text-[17px] leading-relaxed">
-          None of that makes me a software engineer, though — it makes me the
+          None of that makes me a software engineer, though. It makes me the
           person who keeps these systems running and decides what gets built
           next. A year in, I don&apos;t want to plateau at &quot;manages
           systems.&quot; This roadmap is how I close that gap on my own
@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div className="mt-6 flex items-center justify-center gap-4 text-[15px]">
             <Link
               href="/projects"
-              className="rounded-full bg-accent text-white px-5 py-2.5 font-medium"
+              className="rounded-lg bg-accent text-white px-5 py-2.5 font-medium"
             >
               See the roadmap
             </Link>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               href={profile.links.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full px-5 py-2.5 font-medium text-accent"
+              className="rounded-lg px-5 py-2.5 font-medium text-accent"
             >
               View my resume →
             </a>

@@ -13,7 +13,7 @@ export default function BlogPage() {
           Blog
         </h1>
         <p className="mt-4 text-lg text-muted text-center max-w-2xl mx-auto">
-          Write-ups from each project — what I built, what broke, what I&apos;d
+          Write-ups from each project: what I built, what broke, what I&apos;d
           do differently.
         </p>
       </FadeIn>

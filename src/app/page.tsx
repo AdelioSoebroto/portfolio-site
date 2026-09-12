@@ -27,7 +27,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted leading-relaxed">
-              I run enterprise ad-tech systems as an IT Tower at Telkomsel —
+              I run enterprise ad-tech systems as an IT Tower at Telkomsel,
               and I&apos;m spending six months building one real project a
               month so I keep growing past that. From a basic CRUD app to a
               realtime board, a Stripe-backed order system, an AI-powered
@@ -40,13 +40,13 @@ export default function Home() {
             <div className="mt-8 flex items-center justify-center gap-4 text-[15px]">
               <AnimatedLink
                 href="/projects"
-                className="rounded-full bg-accent text-white px-5 py-2.5 font-medium block"
+                className="rounded-lg bg-accent text-white px-5 py-2.5 font-medium block"
               >
                 See the roadmap
               </AnimatedLink>
               <AnimatedLink
                 href="/blog"
-                className="rounded-full px-5 py-2.5 font-medium text-accent block"
+                className="rounded-lg px-5 py-2.5 font-medium text-accent block"
               >
                 Read the blog →
               </AnimatedLink>
@@ -101,7 +101,7 @@ export default function Home() {
           </FadeIn>
           {posts.length === 0 ? (
             <p className="mt-8 text-[15px] text-muted">
-              No posts yet — the first write-up is coming soon.
+              No posts yet. The first write-up is coming soon.
             </p>
           ) : (
             <ul className="mt-8 space-y-6">

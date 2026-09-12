@@ -17,7 +17,7 @@ describe("findAnswer", () => {
 
   it("does not false-match a multi-word keyword as a substring of another word", () => {
     // Regression test: "about you" (an "identity" keyword) must not match
-    // inside "about your" — this query has no real keyword hits and
+    // inside "about your". This query has no real keyword hits and
     // should fall back rather than wrongly answering "who are you".
     const answer = findAnswer("what about your experience with SAP");
     expect(answer).toContain("don't have a canned answer");

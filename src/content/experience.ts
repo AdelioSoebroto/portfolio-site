@@ -10,11 +10,11 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     company: "Telkomsel",
-    role: "TEC Associate — IT Digital Advertisement Management",
+    role: "TEC Associate, IT Digital Advertisement Management",
     dateRange: "Dec 2025 – Present",
     location: "Jakarta, Indonesia",
     bullets: [
-      "Act as one of 4 IT Tower members owning PStudio (SSP), MyAds, Bulk Premium, Malena, and LBA (Location-Based Advertising) end-to-end — from grooming and sprint planning through development, testing, release, and monitoring.",
+      "Act as one of 4 IT Tower members owning PStudio (SSP), MyAds, Bulk Premium, Malena, and LBA (Location-Based Advertising) end-to-end: grooming, sprint planning, development, testing, release, and monitoring.",
       "Delivered 5+ sprints on MyAds and write code directly (Java/Spring Boot on Tomcat) for Malena and Bulk Premium when business requests call for a new feature.",
       "Serve as a technical decision point for infrastructure and software ownership across the department's systems, working directly with engineers, other TEC associates, and external vendors.",
       "Triage and remediate security pentest findings across owned systems, with direct access to Telkomsel's pre-production and production environments.",
@@ -40,7 +40,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Telkomsel",
-    role: "Business Solution Management Intern — Postpaid, Roaming & Interconnect",
+    role: "Business Solution Management Intern (Postpaid, Roaming & Interconnect)",
     dateRange: "Aug 2023 – Aug 2024",
     location: "Jakarta, Indonesia",
     bullets: [
@@ -80,7 +80,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "AIESEC in Bandung",
-    role: "Probation Staff & Organizing Committee — iGreen 2022",
+    role: "Probation Staff & Organizing Committee (iGreen 2022)",
     dateRange: "Oct 2021 – Aug 2022",
     location: "Bandung, Indonesia",
     bullets: [
