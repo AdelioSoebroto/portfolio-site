@@ -4,6 +4,7 @@ export type ExperienceEntry = {
   dateRange: string;
   location: string;
   bullets: string[];
+  images?: string[];
 };
 
 export const experience: ExperienceEntry[] = [
@@ -28,6 +29,11 @@ export const experience: ExperienceEntry[] = [
       "Collaborated with five leading publishers, building partnerships that enabled seamless ad placements and improved campaign delivery.",
       "Designed and proposed a structured project management cycle, establishing a repeatable framework for future platform improvements.",
     ],
+    images: [
+      "/images/experience/telkomsel-adtech/1.jpeg",
+      "/images/experience/telkomsel-adtech/2.jpeg",
+      "/images/experience/telkomsel-adtech/3.jpeg",
+    ],
   },
   {
     company: "Telkomsel",
@@ -40,6 +46,10 @@ export const experience: ExperienceEntry[] = [
       "Processed 34+ DigiPos product configuration updates, enabling new sales and service capabilities.",
       "Configured SBP for Bulk Roaming across multiple Telkomsel channels, deploying 20+ Business IDs to improve operational efficiency.",
       "Operated key Telkomsel tools such as MassTools and DigiCore to support accurate, efficient product configuration.",
+    ],
+    images: [
+      "/images/experience/telkomsel-bsm/1.jpeg",
+      "/images/experience/telkomsel-bsm/2.jpeg",
     ],
   },
   {
@@ -73,6 +83,10 @@ export const experience: ExperienceEntry[] = [
     bullets: [
       "Contributed to virtual brand activation and marketing communications across Incoming and Outgoing Global Volunteer divisions.",
       "Led a 5-member team organizing iGreen 2022, a 3-day environmental initiative attended by 200+ participants, coordinating partnerships with 4 organizations.",
+    ],
+    images: [
+      "/images/experience/aiesec/1.jpeg",
+      "/images/experience/aiesec/3.jpeg",
     ],
   },
   {

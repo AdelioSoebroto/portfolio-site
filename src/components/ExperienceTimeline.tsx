@@ -21,6 +21,19 @@ export function ExperienceTimeline() {
                 </li>
               ))}
             </ul>
+            {entry.images && entry.images.length > 0 && (
+              <div className="mt-4 flex gap-2">
+                {entry.images.map((src) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt=""
+                    loading="lazy"
+                    className="h-16 w-16 rounded-lg object-cover"
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </FadeIn>
       ))}

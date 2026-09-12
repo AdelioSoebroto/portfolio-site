@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projects } from "@/content/projects";
 import { priorProjects } from "@/content/priorProjects";
 import StatusBadge from "@/components/StatusBadge";
@@ -86,31 +87,47 @@ export default function ProjectsPage() {
             <HoverCard
               key={project.slug}
               delay={Math.min(i * 0.08, 0.24)}
-              className="rounded-2xl bg-surface p-7"
+              className="rounded-2xl bg-surface overflow-hidden"
             >
-              <div className="flex items-baseline justify-between gap-4">
-                <span className="text-[12px] font-medium text-muted tracking-wide">
-                  {project.year}
-                </span>
-                <span className="rounded-full bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
-                  {project.award}
-                </span>
+              {project.images[0] && (
+                <img
+                  src={project.images[0].src}
+                  alt={project.images[0].alt}
+                  loading="lazy"
+                  className="w-full h-40 object-cover"
+                />
+              )}
+              <div className="p-7">
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className="text-[12px] font-medium text-muted tracking-wide">
+                    {project.year}
+                  </span>
+                  <span className="rounded-full bg-[color-mix(in_srgb,var(--accent)_15%,transparent)] text-accent px-3 py-1 text-[11px] font-medium">
+                    {project.award}
+                  </span>
+                </div>
+                <h3 className="mt-2 text-xl font-semibold tracking-tight">
+                  {project.title}
+                </h3>
+                <p className="text-[13px] text-muted">{project.role}</p>
+                <p className="mt-3 text-[15px] leading-relaxed">{project.summary}</p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-full bg-background px-3 py-1 text-[12px] text-muted"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="mt-4 inline-block text-[14px] text-accent"
+                >
+                  View project →
+                </Link>
               </div>
-              <h3 className="mt-2 text-xl font-semibold tracking-tight">
-                {project.title}
-              </h3>
-              <p className="text-[13px] text-muted">{project.role}</p>
-              <p className="mt-3 text-[15px] leading-relaxed">{project.summary}</p>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <li
-                    key={tag}
-                    className="rounded-full bg-background px-3 py-1 text-[12px] text-muted"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
             </HoverCard>
           ))}
         </ul>
