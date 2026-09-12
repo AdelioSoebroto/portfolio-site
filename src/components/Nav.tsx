@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "motion/react";
 import { profile } from "@/content/profile";
 import { SearchTrigger } from "@/components/SearchTrigger";
 
@@ -10,8 +13,22 @@ const links = [
 ];
 
 export default function Nav() {
+  const { scrollY } = useScroll();
+  const borderOpacity = useTransform(scrollY, [0, 80], [0, 1]);
+  const blurBg = useTransform(
+    scrollY,
+    [0, 80],
+    ["rgba(0,0,0,0)", "var(--nav-blur-bg)"]
+  );
+
   return (
-    <header className="sticky top-0 z-50 border-b border-hairline backdrop-blur-xl bg-[var(--nav-blur-bg)]">
+    <motion.header
+      style={{
+        backgroundColor: blurBg,
+        borderBottomColor: useTransform(borderOpacity, (o) => `rgba(128,128,128,${o * 0.2})`),
+      }}
+      className="sticky top-0 z-50 border-b backdrop-blur-xl transition-[backdrop-filter]"
+    >
       <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 h-12">
         <Link href="/" className="text-[15px] font-semibold tracking-tight truncate max-w-[55%]">
           {profile.shortName}
@@ -42,6 +59,6 @@ export default function Nav() {
           </ul>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 }
