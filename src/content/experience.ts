@@ -14,7 +14,10 @@ export const experience: ExperienceEntry[] = [
     dateRange: "Dec 2025 – Present",
     location: "Jakarta, Indonesia",
     bullets: [
-      "Contribute to the management and implementation of IT digital advertisement initiatives, enhancing platform functionalities and aligning technology with organizational goals.",
+      "Act as one of 4 IT Tower members owning PStudio (SSP), MyAds, Bulk Premium, Malena, and LBA (Location-Based Advertising) end-to-end — from grooming and sprint planning through development, testing, release, and monitoring.",
+      "Delivered 5+ sprints on MyAds and write code directly (Java/Spring Boot on Tomcat) for Malena and Bulk Premium when business requests call for a new feature.",
+      "Serve as a technical decision point for infrastructure and software ownership across the department's systems, working directly with engineers, other TEC associates, and external vendors.",
+      "Triage and remediate security pentest findings across owned systems, with direct access to Telkomsel's pre-production and production environments.",
     ],
   },
   {

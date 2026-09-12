@@ -9,7 +9,7 @@ export const skillGroups = [
   },
   {
     label: "Programming & Data",
-    skills: ["Python", "SQL", "Laravel", "Excel"],
+    skills: ["Java", "Spring Boot", "Python", "SQL", "Laravel", "Excel"],
   },
   {
     label: "Working style",

@@ -1,7 +1,7 @@
 export const profile = {
   name: "Adelio Ferhan Soebroto",
   shortName: "Adelio Soebroto",
-  tagline: "From managing business systems to building them.",
+  tagline: "I own the systems. Now I'm learning to build them too.",
   email: "dhioferhan@gmail.com",
   links: {
     github: "https://github.com/AdelioSoebroto",

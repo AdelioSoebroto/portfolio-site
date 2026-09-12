@@ -17,33 +17,44 @@ export default function AboutPage() {
         </FadeIn>
       </div>
 
-      <ScrollRevealText text="I spent two years inside SAP, ERP, and ad-tech platforms — configuring the systems other people built. Now I'm learning to build the systems myself." />
+      <ScrollRevealText text="One year out of school, I already own enterprise systems end-to-end at Telkomsel. I'm not doing this roadmap because I'm behind — I'm doing it so I never stand still." />
 
       <StickySection index="01" label="Background">
         <div className="space-y-5 text-[17px] leading-relaxed">
           <p>
-            I&apos;m an Information Systems graduate from Telkom University,
-            currently a TEC Associate on Telkomsel&apos;s IT Digital
-            Advertisement Management team. Before this role, I spent two
-            years across Business Solution Management (postpaid, roaming,
-            interconnect) and Ad Tech Project Management at Telkomsel —
-            validating product change requests, configuring platforms like
-            SAP, MassTools, and PStudio, and coordinating cross-functional
-            teams to keep systems consistent end to end.
+            I&apos;m a TEC (Telkomsel Early Career) Associate on the IT
+            Digital Advertisement Management team, about a year removed from
+            an Information Systems degree at Telkom University. I&apos;m one
+            of four people acting as the IT Tower for our department&apos;s
+            systems — PStudio (our Supply-Side Platform), MyAds, Bulk
+            Premium, Malena, and LBA (Location-Based Advertising) — which
+            means end-to-end ownership: grooming, sprint planning,
+            development, testing, release, and monitoring for all of them.
           </p>
           <p>
-            Most of that experience was operating and specifying systems, not
-            building them myself — mapping processes, configuring platforms,
-            translating requirements between stakeholders. The business
-            background isn&apos;t incidental, though: process mapping, ERP/SAP
-            concepts, and coordinating cross-functional requirements are
-            exactly the skills that make the difference between code that
-            compiles and a system that actually holds up in the real world.
+            Compared to my internship, this is a different level of trust. I
+            make my own calls with stakeholders, hold access to
+            Telkomsel&apos;s full pre-production and production environments,
+            and I&apos;m the one making infrastructure and software-ownership
+            decisions, not just observing them. I still write code myself
+            when a feature request calls for it — mostly Java on Tomcat with
+            Spring Boot for Malena and Bulk Premium — and I work directly
+            with engineers, other TEC associates, and external vendors to
+            keep projects moving and security findings closed out fast.
+          </p>
+          <p>
+            None of that makes me a software engineer, though — it makes me
+            the person who keeps enterprise systems running and specs what
+            gets built next. A year in, I don&apos;t want to plateau at
+            &quot;manages systems.&quot; This roadmap is how I stay current
+            with modern tools and the best practices actually used to build
+            and maintain software, instead of just the enterprise stack I
+            inherited.
           </p>
         </div>
         <div className="mt-8 grid grid-cols-3 gap-4 rounded-2xl bg-surface p-6">
           <AnimatedStat value={3.96} decimals={2} label="GPA, Summa Cum Laude" />
-          <AnimatedStat value={2} suffix="+" label="Years at Telkomsel" />
+          <AnimatedStat value={5} label="Systems owned (IT Tower)" />
           <AnimatedStat value={3} label="Award-winning projects" />
         </div>
       </StickySection>
