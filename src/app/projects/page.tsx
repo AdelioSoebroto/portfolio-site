@@ -1,21 +1,26 @@
 import { projects } from "@/content/projects";
 import StatusBadge from "@/components/StatusBadge";
+import { FadeIn } from "@/components/motion/FadeIn";
+import { HoverCard } from "@/components/motion/HoverCard";
 
 export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 pt-20 pb-24">
-      <h1 className="text-4xl font-semibold tracking-tight text-center">
-        The 6-month roadmap
-      </h1>
-      <p className="mt-4 text-lg text-muted text-center max-w-2xl mx-auto">
-        One project per month, each building on skills from the last.
-      </p>
+      <FadeIn>
+        <h1 className="text-4xl font-semibold tracking-tight text-center">
+          The 6-month roadmap
+        </h1>
+        <p className="mt-4 text-lg text-muted text-center max-w-2xl mx-auto">
+          One project per month, each building on skills from the last.
+        </p>
+      </FadeIn>
 
       <ol className="mt-16 space-y-6">
-        {projects.map((project) => (
-          <li
+        {projects.map((project, i) => (
+          <HoverCard
             key={project.slug}
-            className="rounded-2xl bg-surface p-7 transition-transform hover:-translate-y-0.5"
+            delay={Math.min(i * 0.08, 0.32)}
+            className="rounded-2xl bg-surface p-7"
           >
             <div className="flex items-baseline justify-between gap-4">
               <span className="text-[12px] font-medium text-muted tracking-wide">
@@ -50,7 +55,7 @@ export default function ProjectsPage() {
                 </a>
               )}
             </div>
-          </li>
+          </HoverCard>
         ))}
       </ol>
     </div>
