@@ -4,6 +4,8 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { ChatWidget } from "@/components/ChatWidget";
+import { CommandPalette } from "@/components/CommandPalette";
+import { buildSearchIndex } from "@/lib/searchIndex";
 import { profile } from "@/content/profile";
 import "./globals.css";
 
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const searchIndex = buildSearchIndex();
+
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
@@ -27,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <Footer />
           <ChatWidget />
+          <CommandPalette items={searchIndex} />
         </MotionConfig>
       </body>
     </html>

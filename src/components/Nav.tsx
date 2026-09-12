@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { profile } from "@/content/profile";
+import { SearchTrigger } from "@/components/SearchTrigger";
 
 const links = [
   { href: "/", label: "Home" },
@@ -15,28 +16,31 @@ export default function Nav() {
         <Link href="/" className="text-[15px] font-semibold tracking-tight truncate max-w-[55%]">
           {profile.shortName}
         </Link>
-        <ul className="flex gap-6 sm:gap-8 text-[13px]">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-muted hover:text-foreground transition-colors"
+        <div className="flex items-center gap-4">
+          <SearchTrigger />
+          <ul className="flex gap-6 sm:gap-8 text-[13px]">
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-muted hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a
+                href={profile.links.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:opacity-70 transition-opacity"
               >
-                {link.label}
-              </Link>
+                Resume
+              </a>
             </li>
-          ))}
-          <li>
-            <a
-              href={profile.links.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:opacity-70 transition-opacity"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </header>
   );
