@@ -3,6 +3,7 @@ import { MotionConfig } from "motion/react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { PageTransition } from "@/components/motion/PageTransition";
+import { ChatWidget } from "@/components/ChatWidget";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <PageTransition>{children}</PageTransition>
           </main>
           <Footer />
+          <ChatWidget />
         </MotionConfig>
       </body>
     </html>
