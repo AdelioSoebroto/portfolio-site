@@ -77,8 +77,8 @@ export default function ProjectsPage() {
             Earlier projects
           </h2>
           <p className="mt-1 text-[15px] text-muted">
-            Award-winning healthtech projects built during university, before
-            this roadmap.
+            Team projects from university — award-winning healthtech builds
+            and a product concept — before this roadmap.
           </p>
         </FadeIn>
         <ul className="mt-6 grid sm:grid-cols-2 gap-6">

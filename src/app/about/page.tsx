@@ -14,22 +14,22 @@ export default function AboutPage() {
         <FadeIn delay={0.1}>
           <div className="mt-8 space-y-6 text-left text-[17px] text-muted leading-relaxed">
             <p>
-              I&apos;m an Information Systems graduate (Summa Cum Laude, Telkom
-              University) who spent the past two years on the business side of
-              software — at Telkomsel, I worked in Business Solution
-              Management across postpaid, roaming, and ad tech, and later led
-              project management for a programmatic ad-tech rollout. Day to
-              day that meant validating product change requests, configuring
+              I&apos;m an Information Systems graduate (Summa Cum Laude,
+              Telkom University), currently a TEC Associate on Telkomsel&apos;s
+              IT Digital Advertisement Management team. Before this role, I
+              spent two years across Business Solution Management (postpaid,
+              roaming, interconnect) and Ad Tech Project Management at
+              Telkomsel — validating product change requests, configuring
               platforms like SAP, MassTools, and PStudio, and coordinating
               cross-functional teams to keep systems consistent end to end.
             </p>
             <p>
-              What I didn&apos;t do in that role was build the systems myself
-              — I operated them, mapped their processes, and translated
-              requirements between stakeholders. This roadmap is me closing
-              that gap: six months, one real project a month, going from
-              someone who configures and specs systems to someone who can
-              build them from scratch.
+              Most of that experience was operating and specifying systems,
+              not building them myself — mapping processes, configuring
+              platforms, translating requirements between stakeholders. This
+              roadmap is me closing that gap: six months, one real project a
+              month, going from someone who configures and specs systems to
+              someone who can build them from scratch.
             </p>
             <p>
               The business background isn&apos;t incidental to that — process

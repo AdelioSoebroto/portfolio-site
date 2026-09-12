@@ -27,12 +27,12 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted leading-relaxed">
-              I&apos;m an Information Systems graduate spending six months
-              building one real project a month — from a basic CRUD app to a
-              realtime board, a Stripe-backed order system, an AI-powered
-              document assistant, and a multi-tenant SaaS capstone.
-              Everything ships on GitHub, and I write about what broke and
-              what I learned as I go.
+              I work in IT Digital Advertisement Management at Telkomsel, and
+              I&apos;m spending six months building one real project a month —
+              from a basic CRUD app to a realtime board, a Stripe-backed order
+              system, an AI-powered document assistant, and a multi-tenant
+              SaaS capstone. Everything ships on GitHub, and I write about
+              what broke and what I learned as I go.
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>

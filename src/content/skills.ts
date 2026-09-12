@@ -5,7 +5,7 @@ export const skillGroups = [
   },
   {
     label: "Business & Systems",
-    skills: ["Business Process Mapping", "SAP", "ERP Concepts", "Bizagi Modeler", "Pentaho Data Integration", "Visual Paradigm"],
+    skills: ["Digital Advertisement", "IT Management", "DevSecOps", "Business Process Mapping", "SAP", "ERP Concepts", "Bizagi Modeler", "Pentaho Data Integration", "Visual Paradigm"],
   },
   {
     label: "Programming & Data",
@@ -13,17 +13,17 @@ export const skillGroups = [
   },
   {
     label: "Working style",
-    skills: ["Cross-functional coordination", "Stakeholder communication", "Problem solving", "Public speaking"],
+    skills: ["Cross-functional coordination", "Stakeholder communication", "Teamwork", "Organization", "Problem solving", "Public speaking"],
   },
 ];
 
 export const achievements = [
-  "APICTA Hong Kong (2023) — MyoScope Alert, an ML-powered digital stethoscope for heart attack detection",
-  "APICTA Pakistan (2022) — Amons, an IoT-based real-time arrhythmia monitoring system",
+  "APICTA Hong Kong 2023 — Merit Award for MyoScope Alert, an ML-powered digital stethoscope for heart attack detection",
+  "APICTA Pakistan 2022 — Merit Award for AMons, an ECG-based real-time arrhythmia monitoring system",
   "2nd Winner, ERP Research and Project Mini Contest (2023)",
   "Top 10, JBC Business Plan Competition (2022)",
-  "SAP Certified: SAP01 Fundamentals, AC010 Business Processes in Financial Accounting, SAP 500 Supply Chain Management",
-  "ITIL 4 Foundation Certification (Axelos)",
-  "Microsoft Office Specialist: Excel Associate",
-  "TOEFL 597/677",
+  "SAP Certified: SAP01 Fundamentals (2022), SAP010 Business Processes in Financial Accounting (2023), SAP500 Supply Chain Management (2023)",
+  "ITIL 4 Foundation Certification, AXELOS (2024)",
+  "Microsoft Office Specialist: Excel Associate (2024)",
+  "TOEFL ITP: 597/677",
 ];
