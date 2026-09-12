@@ -3,6 +3,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { ScrollRevealText } from "@/components/motion/ScrollRevealText";
 import { AnimatedStat } from "@/components/motion/AnimatedStat";
 import { StickySection } from "@/components/StickySection";
+import { CapabilityGrid } from "@/components/CapabilityGrid";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { AchievementsList } from "@/components/AchievementsList";
@@ -20,38 +21,26 @@ export default function AboutPage() {
       <ScrollRevealText text="One year out of school, I already own enterprise systems end-to-end at Telkomsel. I'm not doing this roadmap because I'm behind — I'm doing it so I never stand still." />
 
       <StickySection index="01" label="Background">
-        <div className="space-y-5 text-[17px] leading-relaxed">
-          <p>
-            I&apos;m a TEC (Telkomsel Early Career) Associate on the IT
-            Digital Advertisement Management team, about a year removed from
-            an Information Systems degree at Telkom University. I&apos;m one
-            of four people acting as the IT Tower for our department&apos;s
-            systems — PStudio (our Supply-Side Platform), MyAds, Bulk
-            Premium, Malena, and LBA (Location-Based Advertising) — which
-            means end-to-end ownership: grooming, sprint planning,
-            development, testing, release, and monitoring for all of them.
-          </p>
-          <p>
-            Compared to my internship, this is a different level of trust. I
-            make my own calls with stakeholders, hold access to
-            Telkomsel&apos;s full pre-production and production environments,
-            and I&apos;m the one making infrastructure and software-ownership
-            decisions, not just observing them. I still write code myself
-            when a feature request calls for it — mostly Java on Tomcat with
-            Spring Boot for Malena and Bulk Premium — and I work directly
-            with engineers, other TEC associates, and external vendors to
-            keep projects moving and security findings closed out fast.
-          </p>
-          <p>
-            None of that makes me a software engineer, though — it makes me
-            the person who keeps enterprise systems running and specs what
-            gets built next. A year in, I don&apos;t want to plateau at
-            &quot;manages systems.&quot; This roadmap is how I stay current
-            with modern tools and the best practices actually used to build
-            and maintain software, instead of just the enterprise stack I
-            inherited.
-          </p>
+        <p className="text-[17px] leading-relaxed">
+          A year out of Telkom University, I&apos;m a TEC (Telkomsel Early
+          Career) Associate on the IT Digital Advertisement Management team —
+          one of four people acting as the <strong>IT Tower</strong> for five
+          enterprise ad-tech systems. Here&apos;s what that actually means:
+        </p>
+
+        <div className="mt-6">
+          <CapabilityGrid />
         </div>
+
+        <p className="mt-6 text-[17px] leading-relaxed">
+          None of that makes me a software engineer, though — it makes me the
+          person who keeps these systems running and decides what gets built
+          next. A year in, I don&apos;t want to plateau at &quot;manages
+          systems.&quot; This roadmap is how I close that gap on my own
+          terms: staying current with modern tools instead of just the stack
+          I inherited.
+        </p>
+
         <div className="mt-8 grid grid-cols-3 gap-4 rounded-2xl bg-surface p-6">
           <AnimatedStat value={3.96} decimals={2} label="GPA, Summa Cum Laude" />
           <AnimatedStat value={5} label="Systems owned (IT Tower)" />
@@ -60,6 +49,7 @@ export default function AboutPage() {
       </StickySection>
 
       <StickySection index="02" label="Experience">
+        <p className="text-[13px] text-muted mb-6">Tap a role to expand it.</p>
         <ExperienceTimeline />
       </StickySection>
 
