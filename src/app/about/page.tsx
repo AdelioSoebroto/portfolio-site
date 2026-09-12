@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/motion/FadeIn";
+import { profile } from "@/content/profile";
 
 export default function AboutPage() {
   return (
@@ -9,19 +10,35 @@ export default function AboutPage() {
       <FadeIn delay={0.1}>
         <div className="mt-8 space-y-6 text-left text-[17px] text-muted leading-relaxed">
           <p>
-            I&apos;m learning to build real software by building real
-            software — not tutorials. This site tracks a 6-month roadmap: one
-            project a month, each one deliberately harder than the last, each
-            one meant to teach a specific gap (databases, auth, realtime
-            systems, payments, AI integration, and finally a full multi-tenant
-            product).
+            I&apos;m an Information Systems graduate (Summa Cum Laude, Telkom
+            University) who spent the past two years on the business side of
+            software — at Telkomsel, I worked in Business Solution Management
+            across postpaid, roaming, and ad tech, and later led project
+            management for a programmatic ad-tech rollout. Day to day that
+            meant validating product change requests, configuring platforms
+            like SAP, MassTools, and PStudio, and coordinating cross-
+            functional teams to keep systems consistent end to end.
           </p>
           <p>
-            Every project lives in its own GitHub repo with a real README and
-            commit history, and gets a short write-up here once it ships. The
-            goal isn&apos;t just a portfolio — it&apos;s proof I actually
-            understand the systems I built, not just that I copied a
-            tutorial.
+            What I didn&apos;t do in that role was build the systems myself —
+            I operated them, mapped their processes, and translated
+            requirements between stakeholders. This roadmap is me closing
+            that gap: six months, one real project a month, going from
+            someone who configures and specs systems to someone who can build
+            them from scratch.
+          </p>
+          <p>
+            The business background isn&apos;t incidental to that — process
+            mapping, working with ERP/SAP concepts, and coordinating
+            cross-functional requirements are exactly the skills that make
+            the difference between code that compiles and a system that
+            actually holds up in the real world. Every project here gets a
+            real GitHub repo and a write-up on what worked and what broke.
+          </p>
+          <p>
+            <a href={profile.links.resume} target="_blank" rel="noopener noreferrer" className="text-accent">
+              View my resume →
+            </a>
           </p>
         </div>
       </FadeIn>

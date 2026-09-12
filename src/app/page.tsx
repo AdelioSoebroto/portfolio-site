@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { projects } from "@/content/projects";
+import { profile } from "@/content/profile";
 import { getAllPosts } from "@/lib/posts";
 import StatusBadge from "@/components/StatusBadge";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { FadeInItem } from "@/components/motion/FadeInItem";
 import { HoverCard } from "@/components/motion/HoverCard";
 import { AnimatedLink } from "@/components/motion/AnimatedLink";
+import { HeroParallax } from "@/components/motion/HeroParallax";
 
 export default function Home() {
   const featured = projects.slice(0, 3);
@@ -13,38 +15,44 @@ export default function Home() {
 
   return (
     <div>
-      <section className="mx-auto max-w-4xl px-6 pt-24 pb-20 text-center">
-        <FadeIn>
-          <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight">
-            Hi, I&apos;m Your Name.
-          </h1>
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-muted leading-relaxed">
-            I&apos;m spending six months building one real project a month —
-            from a basic CRUD app to a realtime board, a Stripe-backed order
-            system, an AI-powered document assistant, and a multi-tenant SaaS
-            capstone. Everything ships on GitHub, and I write about what broke
-            and what I learned as I go.
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.2}>
-          <div className="mt-8 flex items-center justify-center gap-4 text-[15px]">
-            <AnimatedLink
-              href="/projects"
-              className="rounded-full bg-accent text-white px-5 py-2.5 font-medium block"
-            >
-              See the roadmap
-            </AnimatedLink>
-            <AnimatedLink
-              href="/blog"
-              className="rounded-full px-5 py-2.5 font-medium text-accent block"
-            >
-              Read the blog →
-            </AnimatedLink>
-          </div>
-        </FadeIn>
-      </section>
+      <HeroParallax>
+        <section className="mx-auto max-w-4xl px-6 pt-24 pb-20 text-center">
+          <FadeIn>
+            <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight">
+              Hi, I&apos;m {profile.name.split(" ")[0]}.
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <p className="mt-4 text-xl text-muted">{profile.tagline}</p>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <p className="mt-6 max-w-2xl mx-auto text-lg text-muted leading-relaxed">
+              I&apos;m an Information Systems graduate spending six months
+              building one real project a month — from a basic CRUD app to a
+              realtime board, a Stripe-backed order system, an AI-powered
+              document assistant, and a multi-tenant SaaS capstone.
+              Everything ships on GitHub, and I write about what broke and
+              what I learned as I go.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="mt-8 flex items-center justify-center gap-4 text-[15px]">
+              <AnimatedLink
+                href="/projects"
+                className="rounded-full bg-accent text-white px-5 py-2.5 font-medium block"
+              >
+                See the roadmap
+              </AnimatedLink>
+              <AnimatedLink
+                href="/blog"
+                className="rounded-full px-5 py-2.5 font-medium text-accent block"
+              >
+                Read the blog →
+              </AnimatedLink>
+            </div>
+          </FadeIn>
+        </section>
+      </HeroParallax>
 
       <section className="border-t border-hairline">
         <div className="mx-auto max-w-4xl px-6 py-20">

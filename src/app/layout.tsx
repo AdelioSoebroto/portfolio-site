@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MotionConfig } from "motion/react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { PageTransition } from "@/components/motion/PageTransition";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <MotionConfig reducedMotion="user">
           <Nav />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">
+            <PageTransition>{children}</PageTransition>
+          </main>
           <Footer />
         </MotionConfig>
       </body>
