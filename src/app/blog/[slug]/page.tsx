@@ -17,9 +17,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
   }
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-16 prose dark:prose-invert">
-      <h1>{post.title}</h1>
-      <p className="text-sm text-black/50 dark:text-white/50">
+    <article className="mx-auto max-w-2xl px-6 pt-20 pb-24">
+      <h1 className="text-4xl font-semibold tracking-tight">{post.title}</h1>
+      <p className="mt-3 text-[13px] text-muted">
         {new Date(post.date).toLocaleDateString("en-US", {
           year: "numeric",
           month: "long",
@@ -27,7 +27,9 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
         })}{" "}
         · {post.readingTime}
       </p>
-      <MDXRemote source={post.content} />
+      <div className="prose prose-neutral dark:prose-invert mt-10 max-w-none prose-headings:tracking-tight prose-a:text-accent">
+        <MDXRemote source={post.content} />
+      </div>
     </article>
   );
 }

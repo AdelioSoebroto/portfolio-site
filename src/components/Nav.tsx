@@ -9,17 +9,17 @@ const links = [
 
 export default function Nav() {
   return (
-    <header className="border-b border-black/10 dark:border-white/10">
-      <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-semibold tracking-tight">
+    <header className="sticky top-0 z-50 border-b border-hairline backdrop-blur-xl bg-[var(--nav-blur-bg)]">
+      <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 h-12">
+        <Link href="/" className="text-[15px] font-semibold tracking-tight">
           Your Name
         </Link>
-        <ul className="flex gap-6 text-sm">
+        <ul className="flex gap-8 text-[13px]">
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-black/70 hover:text-black dark:text-white/70 dark:hover:text-white"
+                className="text-muted hover:text-foreground transition-colors"
               >
                 {link.label}
               </Link>

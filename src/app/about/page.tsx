@@ -1,8 +1,8 @@
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-2xl font-semibold tracking-tight">About</h1>
-      <div className="mt-6 space-y-4 text-black/70 dark:text-white/70 leading-relaxed">
+    <div className="mx-auto max-w-2xl px-6 pt-20 pb-24 text-center">
+      <h1 className="text-4xl font-semibold tracking-tight">About</h1>
+      <div className="mt-8 space-y-6 text-left text-[17px] text-muted leading-relaxed">
         <p>
           I&apos;m learning to build real software by building real software —
           not tutorials. This site tracks a 6-month roadmap: one project a

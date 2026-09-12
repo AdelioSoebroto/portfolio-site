@@ -5,20 +5,25 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-2xl font-semibold tracking-tight">Blog</h1>
-      <p className="mt-4 text-black/70 dark:text-white/70">
+    <div className="mx-auto max-w-4xl px-6 pt-20 pb-24">
+      <h1 className="text-4xl font-semibold tracking-tight text-center">
+        Blog
+      </h1>
+      <p className="mt-4 text-lg text-muted text-center max-w-2xl mx-auto">
         Write-ups from each project — what I built, what broke, what I&apos;d
         do differently.
       </p>
 
-      <ul className="mt-10 space-y-8">
+      <ul className="mt-16 divide-y divide-hairline">
         {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`} className="text-lg font-medium underline">
+          <li key={post.slug} className="py-8 first:pt-0">
+            <Link
+              href={`/blog/${post.slug}`}
+              className="text-xl font-medium tracking-tight hover:text-accent transition-colors"
+            >
               {post.title}
             </Link>
-            <p className="text-sm text-black/50 dark:text-white/50">
+            <p className="mt-1 text-[13px] text-muted">
               {new Date(post.date).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
@@ -26,7 +31,7 @@ export default function BlogPage() {
               })}{" "}
               · {post.readingTime}
             </p>
-            <p className="mt-1 text-black/70 dark:text-white/70">
+            <p className="mt-2 text-[15px] text-muted leading-relaxed">
               {post.summary}
             </p>
           </li>
