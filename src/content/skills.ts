@@ -18,8 +18,8 @@ export const skillGroups = [
 ];
 
 export const achievements = [
-  "Silver Medal, Asia Pacific ICT Alliance Awards — Hong Kong (2023)",
-  "Silver Medal, Asia Pacific ICT Alliance Awards — Pakistan (2022)",
+  "APICTA Hong Kong (2023) — MyoScope Alert, an ML-powered digital stethoscope for heart attack detection",
+  "APICTA Pakistan (2022) — Amons, an IoT-based real-time arrhythmia monitoring system",
   "2nd Winner, ERP Research and Project Mini Contest (2023)",
   "Top 10, JBC Business Plan Competition (2022)",
   "SAP Certified: SAP01 Fundamentals, AC010 Business Processes in Financial Accounting, SAP 500 Supply Chain Management",
