@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/content/projects";
 import { priorProjects } from "@/content/priorProjects";
 import StatusBadge from "@/components/StatusBadge";
@@ -90,12 +91,15 @@ export default function ProjectsPage() {
               className="rounded-2xl bg-surface overflow-hidden"
             >
               {project.images[0] && (
-                <img
-                  src={project.images[0].src}
-                  alt={project.images[0].alt}
-                  loading="lazy"
-                  className="w-full h-40 object-cover"
-                />
+                <div className="relative w-full h-40">
+                  <Image
+                    src={project.images[0].src}
+                    alt={project.images[0].alt}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
               )}
               <div className="p-7">
                 <div className="flex items-baseline justify-between gap-4">

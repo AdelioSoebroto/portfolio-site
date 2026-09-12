@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { priorProjects } from "@/content/priorProjects";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -50,12 +51,15 @@ export default async function ProjectDetailPage(props: PageProps<"/projects/[slu
         <ul className="mt-10 grid sm:grid-cols-2 gap-4">
           {project.images.map((image, i) => (
             <FadeInItem key={image.src} delay={Math.min(i * 0.06, 0.24)}>
-              <img
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-                className="w-full rounded-2xl object-cover bg-surface"
-              />
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-surface">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
             </FadeInItem>
           ))}
         </ul>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import type { ExperienceEntry } from "@/content/experience";
 
@@ -63,11 +64,12 @@ export function ExperienceAccordionItem({
               {entry.images && entry.images.length > 0 && (
                 <div className="mt-4 flex gap-2">
                   {entry.images.map((src) => (
-                    <img
+                    <Image
                       key={src}
                       src={src}
                       alt=""
-                      loading="lazy"
+                      width={64}
+                      height={64}
                       className="h-16 w-16 rounded-lg object-cover"
                     />
                   ))}
